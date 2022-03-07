@@ -15,6 +15,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
+        System.out.print("Hola mundo del testing");
         assertTrue( true );
     }
 }
