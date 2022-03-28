@@ -1,4 +1,4 @@
-package pom;
+package pom.openqa;
 
 import org.openqa.selenium.By;
 

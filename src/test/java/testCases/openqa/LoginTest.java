@@ -1,4 +1,4 @@
-package testCases;
+package testCases.openqa;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -8,7 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import pom.*;
+import pom.openqa.*;
 import selenium.Browser;
 
 public class LoginTest {
@@ -37,7 +37,7 @@ public class LoginTest {
     }
 
     @Test
-    public void shouldAnswerWithTrue() {
+    public void testAddBook() {
 				try {
 						// -- LoginPage
 						// login (Login)
@@ -63,10 +63,10 @@ public class LoginTest {
 						assertEquals(bookName, profile.getBookText(0));
 						// PASS
 				} catch(InterruptedException e){
-						System.out.print("Test Failed, procces interrupted");
+						System.out.print("Test Failed, procces interrupted: "+ e.getMessage());
 						fail();
 				} catch(Exception e){
-						System.out.print("Test Failed, procces interrupted");
+						System.out.print("Test Failed, Exception: "+ e.getMessage()+"; happend");
 						fail();
 				}
 

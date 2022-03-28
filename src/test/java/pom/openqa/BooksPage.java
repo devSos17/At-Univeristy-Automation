@@ -1,4 +1,4 @@
-package pom;
+package pom.openqa;
 
 import java.util.List;
 
