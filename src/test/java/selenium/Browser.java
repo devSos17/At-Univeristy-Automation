@@ -52,5 +52,8 @@ public class Browser extends WebElements{
 		public void goToBaseUrl(){
 				goTo(this.baseUrl);
 		}
-	
+
+		public static String getCurrentUrl(){
+			return driver.getCurrentUrl();
+		}
 }

@@ -86,11 +86,11 @@ public class WebElements{
         return true;
 	  }
     
-    public void selectItem(final By locator, String pValue) {
+    public Select selectItem(final By locator, String pValue) {
         WebElement objElement =  getFluentWait(locator);
         WebDriverWait explicitWait = new WebDriverWait(Browser.driver, 10);
         explicitWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        Select selectObject = new Select(objElement);
+        return new Select(objElement);
     }
     
     public void waitForElement(final By locator) {
@@ -121,7 +121,6 @@ public class WebElements{
     	element.click();
     }
     
-    
     public boolean acceptAlert() {
     	WebDriverWait wait = new WebDriverWait(Browser.driver, 3000);
     	wait.until(ExpectedConditions.alertIsPresent());
@@ -130,13 +129,11 @@ public class WebElements{
 			return true;
     }
     
-    
     public String getAlertText() {
     	WebDriverWait wait = new WebDriverWait(Browser.driver, 3000);
     	wait.until(ExpectedConditions.alertIsPresent());
     	String alertMessage = Browser.driver.switchTo().alert().getText();
     	return alertMessage;
     }
-    
     
 }
