@@ -1,5 +1,11 @@
 # Automation práctices
 
+## Requierements
+- Selenium
+- JUnit
+- Web driver:
+  - Chrome webdriver (external bin from selenium)
+
 ## What is selenium
 
 Selenium is a framework to make automated action into a navigator.
@@ -14,3 +20,4 @@ This can be used to make "Automated" tests...
 + It allows to record the tests
 + Supports a web addon to record 
 - It has no "official" support
+
